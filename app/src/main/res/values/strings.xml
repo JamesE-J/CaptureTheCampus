@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">CaptureTheCampus</string>
+    <string name="app_name_presentable">Capture The Campus!</string>
+    <string name="menu_join_game">Join Game</string>
+    <string name="menu_view_scoreboard">View Scoreboard</string>
+    <string name="help_title">Help - </string>
+    <string name="help_content">Capture the campus is an augmented reality game in which two teams, red and blue, each attempt to gain dominance of the hull university campus. To gain control of a zone your team must place more team members inside the zone than the oposing team. Every two seconds you spend inside the zone you gain 1 point of dominance for your team and and another 1 point for your individual score.</string>
+    <string name="credits_title">Credits - </string>
+    <string name="credits_content">Flag Icon - Icon made by Freepik from www.flaticon.com</string>
+    <string name="username_request">Username:</string>
+    <string name="password_request">Password:</string>
+    <string name="team_preference_request">Team Preference:</string>
+    <string name="confirm_password_request">Confirm Password:</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create Account</string>
+    <string name="scoreboard_title">Scoreboard</string>
+    <string name="red_team">Red Team</string>
+    <string name="blue_team">Blue Team</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="username_title">Username</string>
+    <string name="score_title">Score</string>
+    <string name="team_title">Team</string>
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.edmondson_jones.james.capturethecampus.LoginActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:layout_weight="1"
+        android:background="@color/colorRed"
+        android:fontFamily="sans-serif"
+        android:padding="10sp"
+        android:text="@string/app_name_presentable"
+        android:textColor="#ffffff"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="17dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/flag"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_centerHorizontal="true"></ImageView>
+
+    <TextView
+        android:id="@+id/userNameRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username_request"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_below="@+id/imageViewLogo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/usernameEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_below="@+id/userNameRequest"
+        android:layout_alignLeft="@+id/userNameRequest"
+        android:layout_alignStart="@+id/userNameRequest"
+        android:layout_alignRight="@+id/textViewTitle"
+        android:layout_alignEnd="@+id/textViewTitle" />
+
+    <TextView
+        android:id="@+id/passwordRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password_request"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/usernameEntry"
+        android:layout_alignLeft="@+id/usernameEntry"
+        android:layout_alignStart="@+id/usernameEntry" />
+
+    <EditText
+        android:id="@+id/passwordEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text=""
+        android:layout_below="@+id/passwordRequest"
+        android:layout_alignLeft="@+id/passwordRequest"
+        android:layout_alignStart="@+id/passwordRequest"
+        android:layout_alignRight="@+id/usernameEntry"
+        android:layout_alignEnd="@+id/usernameEntry" />
+
+    <Button
+        android:id="@+id/menuButtonOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selecter"
+        android:contextClickable="false"
+        android:elevation="0dp"
+        android:padding="5sp"
+        android:text="@string/login"
+        android:textColor="#ffffff"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/passwordEntry"
+        android:layout_alignRight="@+id/passwordEntry"
+        android:layout_alignEnd="@+id/passwordEntry"
+        android:layout_alignLeft="@+id/textViewTitle"
+        android:layout_alignStart="@+id/textViewTitle" />
+
+    <Button
+        android:id="@+id/menuButtonTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_selecter"
+        android:text="@string/create_account"
+        android:layout_below="@+id/menuButtonOne"
+        android:layout_marginTop="17dp"
+        android:layout_alignLeft="@+id/menuButtonOne"
+        android:layout_alignStart="@+id/menuButtonOne"
+        android:layout_alignRight="@+id/menuButtonOne"
+        android:layout_alignEnd="@+id/menuButtonOne" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+
+</RelativeLayout>

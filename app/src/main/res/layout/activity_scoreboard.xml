@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.edmondson_jones.james.capturethecampus.ScoreboardActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:layout_weight="1"
+        android:background="@color/colorRed"
+        android:fontFamily="sans-serif"
+        android:padding="10sp"
+        android:text="@string/app_name_presentable"
+        android:textColor="#ffffff"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/scoreboardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/scoreboard_title"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_centerHorizontal="true" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*"
+        android:layout_below="@+id/scoreboardTitle"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="top|center_horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal">
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_height="wrap_content"
+                android:textAlignment="center">
+            </ListView>
+
+            <ListView
+                android:id="@+id/listView2"
+                android:layout_height="wrap_content"
+                android:textAlignment="center">
+            </ListView>
+
+            <ListView
+                android:id="@+id/listView3"
+                android:layout_height="wrap_content"
+                android:textAlignment="center">
+            </ListView>
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.edmondson_jones.james.capturethecampus.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:layout_weight="1"
+        android:background="@color/colorRed"
+        android:fontFamily="sans-serif"
+        android:padding="10sp"
+        android:text="@string/app_name_presentable"
+        android:textColor="#ffffff"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="17dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/flag"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_centerHorizontal="true"></ImageView>
+
+    <Button
+        android:id="@+id/menuButtonOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewTitle"
+        android:layout_alignLeft="@+id/textViewTitle"
+        android:layout_alignRight="@+id/textViewTitle"
+        android:layout_alignStart="@+id/textViewTitle"
+        android:layout_below="@+id/imageViewLogo"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_selecter"
+        android:contextClickable="false"
+        android:elevation="0dp"
+        android:padding="5sp"
+        android:text="@string/menu_join_game"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/menuButtonTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_alignEnd="@+id/menuButtonOne"
+        android:layout_alignLeft="@+id/menuButtonOne"
+        android:layout_alignRight="@+id/menuButtonOne"
+        android:layout_alignStart="@+id/menuButtonOne"
+        android:layout_below="@+id/menuButtonOne"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/button_selecter"
+        android:text="@string/menu_view_scoreboard" />
+
+    <ImageButton
+        android:id="@+id/menuButtonSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@android:drawable/ic_menu_help" />
+
+
+</RelativeLayout>
